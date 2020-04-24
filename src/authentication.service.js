@@ -19,6 +19,6 @@ function login(userName, password) {
   instance
     .post('/login', { userName, password }, config)
     .then(response => {
-      localStorage.setItem("currentUser", JSON.stringify(response.data));
+      localStorage.setItem("currentUser", JSON.stringify(response.data.data));
     });
 }

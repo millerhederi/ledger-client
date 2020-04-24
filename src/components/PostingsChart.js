@@ -26,7 +26,7 @@ const PostingsChart = function({ accountId }) {
         })
         .then(
           (result) => {
-            setMonthlyTotal(result.data)
+            setMonthlyTotal(result.data.data.aggregates)
           }
         );
     }

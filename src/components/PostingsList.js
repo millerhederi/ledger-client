@@ -49,7 +49,7 @@ const PostingsList = function({ accountId }) {
         })
         .then(
           (result) => {
-            setPostings(result.data)
+            setPostings(result.data.data.items)
           }
         );
     }

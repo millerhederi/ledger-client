@@ -24,7 +24,7 @@ const AccountDropdown = function ({ setAccountId }) {
         })
         .then(
           (result) => {
-            setAccounts(result.data)
+            setAccounts(result.data.data.items)
           }
         );
     }
